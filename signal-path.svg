@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 14 720 148" role="img" aria-labelledby="t">
+  <title id="t">A parking gate, a payment terminal and an ANPR camera wired to an on-premises server, which bridges them to the cloud.</title>
+  <style>
+    svg { --accent: #7054cc; --wire: #d0d7de; --ink: #6e7781; }
+    @media (prefers-color-scheme: dark) {
+      svg { --accent: #8f79e8; --wire: #3d444d; --ink: #9198a1; }
+    }
+    text { font: 12px ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace; fill: var(--ink); }
+    .node { fill: var(--accent); fill-rule: evenodd; }
+    .wire { fill: none; stroke: var(--wire); stroke-width: 1.5; }
+    .bridge { fill: none; stroke: var(--accent); stroke-width: 2; stroke-dasharray: 3 7; animation: flow 1.4s linear infinite; }
+    .pkt { fill: var(--accent); display: none; }
+    @supports (offset-path: path("M0 0")) {
+      .pkt { display: inline; offset-rotate: 0deg; animation: travel 3.4s linear infinite; }
+      .p1 { offset-path: path("M181 42 H271 V88 H355"); }
+      .p2 { offset-path: path("M181 88 H355"); animation-duration: 2.6s; animation-delay: 0.9s; }
+      .p3 { offset-path: path("M181 134 H271 V88 H355"); animation-delay: 1.7s; }
+    }
+    @keyframes flow { to { stroke-dashoffset: -10; } }
+    @keyframes travel {
+      0% { offset-distance: 0%; opacity: 0; }
+      8%, 92% { opacity: 1; }
+      100% { offset-distance: 100%; opacity: 0; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .bridge { animation: none; }
+      .pkt { display: none; }
+    }
+  </style>
+
+  <path class="wire" d="M181 42 H271 V88 M181 134 H271 V88 M181 88 H355"/>
+  <path class="bridge" d="M397 88 H595"/>
+
+  <rect class="pkt p1" x="-2.5" y="-2.5" width="5" height="5"/>
+  <rect class="pkt p2" x="-2.5" y="-2.5" width="5" height="5"/>
+  <rect class="pkt p3" x="-2.5" y="-2.5" width="5" height="5"/>
+
+  <path class="node" d="M167 37h10v-2h4v14h-4v-8h-10z"/>
+  <path class="node" d="M167 81h14v14h-14z M170 84h8v3h-8z"/>
+  <path class="node" d="M167 127h14v14h-14z M171 131h6v6h-6z"/>
+
+  <path class="node" d="M355 72h34v8h-34z M381 74h4v4h-4z M355 84h34v8h-34z M381 86h4v4h-4z M355 96h34v8h-34z M381 98h4v4h-4z"/>
+
+  <path class="node" d="M633 68h24v8h8v8h16v24h-80v-24h8v-8h16v8h8z"/>
+
+  <text x="153" y="46" text-anchor="end">parking gate</text>
+  <text x="153" y="92" text-anchor="end">payment terminal</text>
+  <text x="153" y="138" text-anchor="end">ANPR camera</text>
+  <text x="372" y="128" text-anchor="middle">on-prem server</text>
+  <text x="641" y="128" text-anchor="middle">cloud</text>
+</svg>
