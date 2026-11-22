@@ -1,9 +1,14 @@
-<img src="./signal-path.svg" width="100%" alt="A parking gate, a payment terminal and an ANPR camera wired to an on-premises server, which bridges them to the cloud.">
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.v1.svg">
+    <img src="assets/hero-light.v1.svg" width="100%" alt="Animated CRT terminal that draws a 5 by 5 pixel letter M and prints the headline beside it. Mike Manko, Warsaw, Poland. Usually building something, unless I'm out on the water. Interests: Distributed systems, IoT and edge computing, DDD-heavy systems, Multi-tenant backends, AI agents / ML, Performance work, WebGL.">
+  </picture>
+</p>
 
-## From the parking gate up to the cloud
-
-Real hardware on one end, distributed backends on the other, and the on-premises server that bridges the two.
-
-<sub><samp>INTERESTED IN</samp></sub>
-
-<kbd>Distributed systems</kbd> <kbd>IoT and edge computing</kbd> <kbd>DDD-heavy systems</kbd> <kbd>Multi-tenant backends</kbd> <kbd>AI agents / ML</kbd> <kbd>Performance work</kbd> <kbd>WebGL</kbd>
+- Distributed systems
+- IoT and edge computing: devices, terminals, cameras, a local gateway, the cloud
+- DDD-heavy systems
+- Multi-tenant backends
+- AI agents / ML
+- Performance work
+- WebGL
